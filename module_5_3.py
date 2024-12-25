@@ -1,5 +1,3 @@
-# Задача "Нужно больше этажей":
-# Основа из предыдущей задачи
 class House:
     def __init__(self, name, number_of_floors):
        self.name = name
@@ -10,7 +8,7 @@ class House:
     def __str__(self):
        title = str(f'Название: {self.name}, кол-во этажей: {self.number_of_floors}')
        return title
-# Создаём условия по дополнению класса House следующими специальными методами:
+
     def __eq__(self, other):    # 1
         if isinstance(other.number_of_floors, int) and isinstance(other, House):
             return self.number_of_floors == other.number_of_floors
@@ -48,7 +46,7 @@ class House:
             self.number_of_floors += value
         return self
 
-# Вывод результатов по условиям задачи:
+
 
 h1 = House('ЖК Эльбрус', 10)
 h2 = House('ЖК АКация', 20)
@@ -67,10 +65,10 @@ print(h1)
 (h2.__radd__(10))
 
 print(h2)
-print((h1).__gt__ (h2)) # __gt__
-print((h1). __ge__ (h2)) # __ge__
-print((h1). __lt__ (h2)) # __lt__
+print((h1).__gt__ (h2))
+print((h1). __ge__ (h2))
+print((h1). __lt__ (h2))
 
-print((h1). __le__ (h2)) # __le__
+print((h1). __le__ (h2))
 
-print((h1). __ne__ (h2)) # __ne__
+print((h1). __ne__ (h2))
