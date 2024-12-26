@@ -1,4 +1,3 @@
-# Задача "История строительства":
 class House:
 
     houses_history = []
@@ -69,7 +68,6 @@ class House:
     def __radd__(self, value):
         return self.__add__(value)
 
-# Вывод результата по уловию задачи
 
 h1 = House('ЖК Эльбрус', 10)
 print(House.houses_history)
